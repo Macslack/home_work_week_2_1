@@ -1,8 +1,9 @@
 class Student
-  def initialize(name, cohort)
+  def initialize(name, cohort, talk, fav)
     @name = name
     @cohort = cohort
-
+    @voice = talk
+    @fav = fav
   end
 
   def student_name()
@@ -13,12 +14,32 @@ class Student
   return @cohort
   end
 
-  def student_name=(name)
+  def student_voice()
+    return @voice
+  end
+
+  def student_fav()
+    return @fav
+  end
+
+  def set_student_name(name)
     @name = name
   end
 
-  def student_cohort=(number)
+  def set_student_cohort(number)
     @cohort = number
   end
+
+
+
+  def set_student_talk(talk)
+    @voice = talk
+  end
+
+  def set_student_fav(fav)
+    @fav = fav
+  end
+
+
 
 end
