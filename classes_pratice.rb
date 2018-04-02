@@ -38,6 +38,7 @@ class Student
 
   def set_student_fav(fav)
     @fav = fav
+    p "I love #{fav}"
   end
 
 
