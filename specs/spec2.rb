@@ -22,4 +22,8 @@ class TestClassesPraticeTwo < MiniTest::Test
     @Team.add_player("Caz")
     assert_equal(["Caz","Bill","Ben"], @Team.players)
   end
+  def test_check_player
+    @Team.check_player("Bill")
+    assert_equal([true], @Team.players)
+  end
 end

@@ -22,6 +22,9 @@ end
 def add_player(new_player)
   @players == players.unshift(new_player)
 end
+def check_player(player)
+  @players.include?(player)
+end
 
 
 
