@@ -4,6 +4,7 @@ def initialize(name, players, coach_name)
   @name = name
   @players = players
   @coach_name = coach_name
+
 end
 
 # def team_name
@@ -18,8 +19,8 @@ end
 # def set_coach_name(new_coach_name)
 #   @coach_name = new_coach_name
 # end
-def add_player()
-  @players == players.unshift("Caz")
+def add_player(new_player)
+  @players == players.unshift(new_player)
 end
 
 
